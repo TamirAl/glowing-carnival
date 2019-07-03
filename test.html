@@ -1,0 +1,1914 @@
+
+<!DOCTYPE html>
+<html data-action='show' data-controller='easy_forms' data-id='39' dir='ltr' lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='IE=8' http-equiv='X-UA-Compatible'>
+<meta content='IE=7' http-equiv='X-UA-Compatible'>
+<meta content='no-cache' http-equiv='cache-control'>
+<meta content='no-cache' http-equiv='Pragma'>
+<title>Forms</title>
+<link href='/assets/favicon-cd941e7bee11ad2e862dc6b9b22bd4731c50c6c90339ce35d27cf01571ce69c2.ico' rel='shortcut icon'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Hgb4tbuP+ZlwRKNGKkcSLAOO21PHiyaqMv7FjWwPy7uOUX6nceSm33efpRjTQMZOr0kBIFx15h+Kh/KgK7nmUw==" />
+<!--[if lt IE 9]>
+<script src="/assets/html5-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+<![endif]-->
+<link rel="stylesheet" media="all" href="/assets/application-70645615933bffe9889c894b3e0fe4b38fe677f20e056ab6b9b9975d12e95291.css" />
+
+
+<link rel="stylesheet" media="screen" href="/assets/easy_form_show-bf5cb3bd110a01b6ab551ca588ecd212a61def213f973f8532f328895ba1049e.css" />
+<link rel="stylesheet" media="screen" href="/assets/easy_form_widgets-3e4690b1372570323b4f968f32c8aee589a9033043cc4a760b855f2b7f588713.css" />
+<style>
+/* ======= Overrides from main.css.less ======= */
+
+#supplierPanel .showMeToolbar,
+#supplierPanel #panelToggler,
+.dashboard_nav ul.links li.on,
+.more_nav li.on,
+.prettier_setup h3,
+.primary_bkgd,
+.print-header,
+.quick_data_field.current,
+.report .head .inner,
+.spiffyTable .head .inside,
+.ui-dialog .ui-dialog-titlebar, .rails-sweet-alert .swal-title {
+  background-color: #ee2624;
+}
+.primary_bkgd.hoverable:hover,
+.primary_bkgd.hoverable:focus,
+.secondary_bkgd,
+.whatdoyouneed #go:hover {
+  background-color: #ff3331;
+}
+
+nav.primary { background: transparent; }
+nav.primary .navbar-nav { background: transparent; }
+nav.primary .navbar-nav .dropdown-menu { background: #ee2624; }
+nav.primary .navbar-nav .nav-item.on a { background: #ff3331; }
+
+.more_nav li.on,
+.dashboard_nav ul.links li.on,
+.quick_data_field.current,
+.report .head .inner,
+.primary_brdr,
+.spiffyTable .head .inside {
+  border-color: #ee2624;
+}
+
+.secondary_brdr {
+  border-color: #ff3331;
+}
+
+#page-container,
+.user_home_page #page-content {
+  border-bottom-color: #ee2624;
+}
+
+.spiffyTable .wrap table tbody tr.selected {
+  border-left: 4px solid #ee2624;
+}
+
+#notification_widget .notification_icon {
+  color: #ee2624;
+}
+
+/* ======= Overrides from login.css.less ======= */
+.login .company_name_border {
+  border-bottom-color: #ee2624;
+}
+
+</style>
+
+<link rel="stylesheet" media="print" href="/assets/print-09fe9c4d575e75954d20f10184004b7d5a75db1e36d177671958163a85811a04.css" />
+<script src="/assets/i18n_manifest-9950af24827a060409e7a2896033efd0a2582a05d3c0460cc50b2faaf7fa754b.js"></script>
+<script src="/assets/common-4bb225d9658707fbe8a5c0a3147be3a6f9689a715f60e28e3edf7789190a19a9.js"></script>
+<script>
+  I18n.fallbacks = true;
+  I18n.locales['en'] = ["en"];
+  $(document).ready(function() {
+    $.global.culture = $.global.cultures['en'];
+    $('nav a.on').append("<div id='onWrap'></div>");
+    try{
+      $('a#cart').coupaPopOver($('#cart_container'), { openType: 'hover', onShow: function(){ $(".s-menu").removeClass("active"); } });
+    } catch(e){
+      // should be fixed;
+    }
+  });
+  
+  // Global var used for asset pipeline JS files for the asset_path or image_path
+</script>
+<script>
+  I18n.defaultLocale = "en";
+  I18n.locale = "en";
+  I18n.dateFormat = "mm/dd/y";
+  $(function(){
+    $.datepicker.setDefaults($.datepicker.regional['en']);
+    $.datepicker.setDefaults({ dateFormat: "mm/dd/y",
+                               beforeShow: function(input, inst) {
+                                 inst.dpDiv.addClass('notranslate');
+                               }
+    });
+  });
+</script>
+
+<script src="/assets/coupa_nav-7190d2ed67b4333b99da7cd95a62c93057db79db79fa5ae1bda56b3ea5d7251c.js"></script>
+<script src="/assets/easy_forms_show-deffa59c5a15174637be2124e45cfad67d927e13564776fd92c8d11acbd5e604.js"></script>
+<script>window.coupa = window.coupa || {};
+window.coupa.EasyFormWidgetSimpleConditions = {};
+window.coupa.EasyFormWidgetSimpleConditions.Conditions = {};
+window.coupa.EasyFormWidgetSimpleConditions.ReadOnlyPage = true;
+</script>
+<script src="/assets/easy_form_widgets-ea51d0e73f30afb34a2831656bced20c20f44c5e5231923a0493df6e6b8e557b.js"></script>
+<script src="/assets/ReactCore_wp_bundle-54091394db7be07a0a1400c278f627d5b844bc71701c8c35a725faa60fb9a6ee.js"></script>
+<script src="/assets/EasyFormWidgetConditions_wp_bundle-c013a6eb1be36308c48a3210324ac995fb1356ee4fbd17e8df58c0d4af8191f2.js"></script>
+
+<script>
+  var num_secs = 7200;
+  var expiration_route =  "https://cantire-test.coupahost.com/sessions/expiration_check";
+  var timeout_warning_duration_in_seconds = 120;
+  function expiration_check() {
+    $.ajax({
+      url: expiration_route,
+      success: function(data) {
+        if(data.hasOwnProperty('expired_session_url')) {
+          window.location.href = data.expired_session_url;
+        } else {
+          if(data.hasOwnProperty('alert_url')) {
+            build_remote_dialog({ url: data.alert_url });
+          }
+          sessionTimer = setTimeout(expiration_check, data.timeout_duration);
+        }
+      },
+      error: function() {}
+    });
+  }
+  var sessionTimer = setTimeout(expiration_check, (num_secs - timeout_warning_duration_in_seconds) * 1000);
+</script>
+
+<script>
+  // Show loading message if AJAX is longer than one second
+  $(function() {
+    var delay = -1;
+  
+    // If delay is less than zero, then we turn off the progress notifier
+    if(delay < 0) {
+      return;
+    }
+  
+    $.noty.defaults.layout = 'topCenter';
+    $.noty.defaults.theme = 'coupaTheme';
+    $.noty.defaults.animation.speed = 0;
+  
+    var manager = new ProgressNotifier();
+  
+    var contexts = [
+      {msg: I18n.t('defaults.contexts.please_wait'), delay: delay, type: 'GET', // opening an order pad
+        url: new RegExp('^/order_pads/[0-9]+$')},
+      {msg: I18n.t('defaults.contexts.adding_items'), delay: delay, type: 'POST', // adding items to cart
+        url: new RegExp('^/requisition_headers/([0-9]+/)?menu_add')},
+      {msg: I18n.t('defaults.contexts.submitting_your_cart'), delay: delay, type: 'POST', // submitting cart
+        url: new RegExp('^/requisition_headers/([0-9]+/)?submit_for_approval')},
+      {msg: I18n.t('defaults.contexts.please_wait'), delay: delay, type: 'GET', // returning to home page
+        url: new RegExp('^/user/home$')},
+      {msg: I18n.t('defaults.contexts.please_wait'), delay: delay, type: 'GET', // viewing pos
+        url: new RegExp('^/order_headers$')},
+      {msg: I18n.t('defaults.contexts.please_wait'), delay: delay, type: 'GET', // viewing invoices
+        url: new RegExp('^/invoices$')},
+      {msg: I18n.t('defaults.contexts.please_wait'), delay: delay, type: 'GET', // viewing reqs
+        url: new RegExp('^/requisition_headers$')},
+      {msg: I18n.t('defaults.contexts.please_wait'), delay: delay, type: 'POST', // saving or deleting an order pad
+        url: new RegExp('^/order_pads/[0-9]+$')},
+      {msg: I18n.t('defaults.contexts.please_wait'), delay: delay, type: 'GET', // editing an order pad
+        url: new RegExp('^/order_pads/[0-9]+/edit$')},
+      {msg: I18n.t('defaults.contexts.retrieving_your_cart'), delay: delay, type: 'GET', // viewing cart
+        url: new RegExp('^/requisition_headers/([0-9]+/)?(edit|edit_cart)?$')},
+      {msg: I18n.t('defaults.contexts.moving_expense_lines'), delay: delay, type: 'POST', // move expense line
+        url: new RegExp('^/expense_lines/move_lines$')},
+      {msg: I18n.t('defaults.contexts.adding_new_line'), delay: delay, type: 'GET', // adding new expense line.  this takes a few seconds and creates a row in the DB :(
+        url: new RegExp('^/expense_lines/new')}
+    ];
+  
+    for (var i = 0; i < contexts.length; i++) {
+      manager.registerContext(new Context(contexts[i]["msg"], contexts[i]["delay"], {
+        type: contexts[i]["type"],
+        url: contexts[i]["url"]
+      }));
+    }
+  
+    manager.start();
+  });
+</script>
+
+<script>
+  $(function() {
+    shortcutListener.init();
+  }); //instantiate the keyboard shortcuts
+  
+  // accounting.js settings (for sourcing)
+  accounting.settings = $.extend(true, {}, accounting.settings, {
+    number: {
+      precision: I18n.lookup("number.format.precision"),
+      thousand: I18n.lookup("number.format.delimiter"),
+      decimal: I18n.lookup("number.format.separator")
+    },
+    currency: {
+      format: "%v",
+      decimal: I18n.lookup("number.currency.format.separator"),
+      thousand: I18n.lookup("number.currency.format.delimiter"),
+      precision: I18n.lookup("number.currency.format.precision")
+    }
+  });
+  var sourcing_prices_precision = 4;
+</script>
+
+</head>
+<body data-env='production'>
+
+
+<div class='easy_forms_show_page s-pageContent wrapper'>
+<header id='main_header'>
+<a href='#main-content-skip' id='skip-to-main-content'>Skip to main content</a>
+<nav id='topNav' role='navigation'>
+<div class='sub-menu top s-menu'>
+<a aria-label='Tamir' class='s-menu-topLink uppercase' href='/user/account' id='my_account'>Tamir</a>
+<div class='sub-menu-popover s-sub-menu-popover'>
+<div class='content myaccount'>
+<div class='col-left profile'><a href="/settings/general/#profile_photo"><img title="Tamir" alt="Tamir" aria-hidden="true" class="avatar avatarSprite user_avatar_thumb" src="/assets/blank-47043e4823a6c21a8881de789b4185355330b5804629d23f6b43dd93f5265292.gif" width="40" height="40" /></a>
+</div>
+<div class='col-right'>
+<ul class='nowrap'>
+<li>
+<a title="Activity" class="s-menu-link" aria-label="Activity" href="/user/account">Activity</a>
+</li>
+<li>
+<a title="Groups" class="s-menu-link" aria-label="Groups" href="/user_groups?filter=3">Groups</a>
+</li>
+<li>
+<a title="Settings" class="s-menu-link" aria-label="Settings" href="/settings/general/39">Settings</a>
+</li>
+<li>
+<a title="Inbox" class="s-menu-link" aria-label="Inbox" href="/inbox">Inbox</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='footer'>
+<div class='signout w_photo'>
+<a class="s-menu-link" title="Sign Out" aria-label="Sign Out" rel="nofollow" data-method="delete" href="/sessions/destroy">Sign Out</a>
+</div>
+</div>
+</div>
+</div>
+<span class='separator'></span>
+<div class='s-notificationWidget sub-menu top' id='notification_widget'>
+<span class='s-notificationIcon notification_icon ' tabindex='0'>
+<i class='fa fa-bell'></i>
+</span>
+<div class='sub-menu-popover s-popoverMenu'>
+<div class='content s-notificationListView'>
+<div class='notifications_header s-notificationHeader'>
+<div class='col-left'>
+<span class='filter'>
+View
+<select class='s-notificationsFilter' name='notifications_filter' width='60'>
+<option value='all'>
+All
+</option>
+<option value='fyi'>
+FYI
+</option>
+<option value='todo'>
+To Do
+</option>
+</select>
+</span>
+<span class='notifications_msg'>
+You have no notifications.
+</span>
+</div>
+<div class='col-link'>
+<a href='/inbox'>Inbox</a>
+</div>
+</div>
+<div class='loading_spinner s-loadingSpinner'></div>
+<div class='notifications_list s-notificationList'></div>
+</div>
+<div class='content notification_response_view s-notificationResponseView'>
+<div class='comment_title s-commentTitle'></div>
+<div class='s-commentBody'></div>
+<div class='response_input'>
+<input id='type' name='type' type='hidden'>
+<input id='header_id' name='header_id' type='hidden'>
+<input id='mention_comment' name='mention_comment' type='hidden'>
+<textarea name='comment_text' placeholder='Reply here'></textarea>
+</div>
+<div class='comment_buttons'>
+<a class='button small s-commentResponseCancel' tabindex='0'>
+<span>
+Cancel
+</span>
+</a>
+<a class='button small bluuue s-commentResponseSubmit' tabindex='0'>
+<span>
+Reply
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<span class='separator'></span>
+<div class='sub-menu s-menu'>
+<a aria-label='Cart' class='s-menu-topLink uppercase' href='/requisition_headers/edit_cart' id='cart'>
+Cart
+<span class='primary_bkgd' id='cartNum'>0</span>
+</a>
+</div>
+<span class='separator'></span>
+<div class='sub-menu top s-menu'>
+<a aria-label='Help' class='s-menu-topLink uppercase' href='#' id='help'>
+Help
+</a>
+<div class='sub-menu-popover s-sub-menu-popover'>
+<div class='content help'>
+<ul class='nowrap'>
+<li>
+<a target="_blank" class="s-menu-link" title="Coupa Help" aria-label="Coupa Help" href="/help/auth_link">Coupa Help</a>
+</li>
+<li>
+<a class="s-menu-link" title="Ask an Expert" aria-label="Ask an Expert" href="/ask">Ask an Expert</a>
+</li>
+<li>
+<a class="s-menu-link" title="Take a Tour" aria-label="Take a Tour" href="/tour">Take a Tour</a>
+</li>
+<li>
+      <a width="1000px" data-remote-dialog="true" data-content="#320616299" data-dialog-width="1000px" data-dialog-title="Welcome to the Coupa Community" href="#">Coupa Community</a>
+      <div id="320616299" style="display: none"><a class="blue right" target="_blank" style="margin-bottom: 6px;" href="https://getsatisfaction.com/coupa">Go To Full Site <i class="fa fa-fw  fa-external-link"></i></a>
+<div id='getsat-widget-8356'></div>
+<script src="/assets/get_satisfaction-a113dd043af1995dfadb4c7e1fa90340987006c0f6927afd84536ae45b580b5c.js"></script>
+<script>
+  if (typeof GSFN !== "undefined") { GSFN.loadWidget(8356,{"containerId":"getsat-widget-8356"}); }
+</script>
+</div>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</nav>
+
+<a id="logo_link" tabindex="-1" role="presentation" aria-hidden="true" href="/user/home"><img id="global-logo" role="presentation" aria-hidden="true" alt="" title="" src="/public_attachments/JqmEAmN2?style=small" /></a>
+</header>
+<div class='popOver' id='cart_container' style='display:none'>
+<div class='content'>
+<div class='inner'>
+<div class='cart'>
+<div class='message'>Your cart is empty.</div>
+<div class='summary'>
+<div class='total'>
+Total 0.00 CAD
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='footer'>
+<div class='review'>
+<a class='review-cart' data-disable-on-click='true' href='/requisition_headers/247/edit'>
+<span>Review Cart</span>
+</a>
+</div>
+</div>
+
+</div>
+<div class='navBackground primary_bkgd'></div>
+<nav aria-live='polite' class='navBackground primary_bkgd primary invisible' role='navigation'>
+<ul aria-label='Main Menu' class='navbar-nav' role='menubar'>
+<li class='nav-item' role='none'>
+<a id="home" role="menuitem" href="/user/home">Home</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/requisition_headers">Requests</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/order_headers">Orders</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/invoices">Invoices</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/community/advantage">Community</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/inventory">Inventory</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/quotes/requests">Sourcing</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/suppliers">Suppliers</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/contracts/list">Contracts</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/dashboard/advanced_benchmarking">Reports</a>
+</li>
+<li class='nav-item on' data-keep role='none'>
+<a role="menuitem" href="/administration/home">Setup</a>
+</li>
+</ul>
+</nav>
+<div class='clear'></div>
+<script>
+  CoupaNav.buildPrimary("More...");
+</script>
+
+<nav class='secondary-navbar enable-bootstrap invisible' id='secondary' role='navigation'>
+<ul aria-label='Secondary Menu' class='navbar-nav' role='menubar'>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/administration/home">All Setup Items</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/administration/company">Company Info</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/accounts">Accounts</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/user/list">Users</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/approval_limits">Approvals</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/periods">Budget Periods</a>
+</li>
+<li class='nav-item' role='none'>
+<a role="menuitem" href="/budget_lines">Budget Lines</a>
+</li>
+</ul>
+</nav>
+<div class='clear'></div>
+<script>
+  CoupaNav.buildSecondary("More...");
+</script>
+
+<div id='main-content-skip' tabindex='-1'></div>
+<div class='outer_wrapper'>
+<div id='page-container' role='main'>
+<h1 id='pageHeader'>
+Forms
+
+</h1>
+<div class='comment_number_wrapper'>
+
+</div>
+<br class='clear'>
+
+<br class='clear'>
+<div class='sticky' id='flash_container' style='display:none;'>
+
+</div>
+<div id='content'>
+<form data-easy-form-id="39" class="read_only_form show_easy_form" novalidate="novalidate" id="edit_easy_form_39" enctype="multipart/form-data" action="/easy_forms/39" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="patch" /><input type="hidden" name="authenticity_token" value="1gZF9MRbOvFDj75ZcqnTbwtFFqHRvhqfo03/KyEnKqBGUcPmDjBlt0RUuAeLrgcNp4LM0kpA2iobNMgGZpEHSA==" /><div class='easy_form_attributes expandable-section s-expandable-section' data-initial-expand='true'>
+<div class='header page_step_header'>
+<h2>
+<em>1</em>
+Form Attributes
+<div class='expandable-arrow'></div>
+</h2>
+</div>
+
+<div class='expandable-content'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_name">Name</label><input label="Name" type="text" value="New Supplier Request Form" name="easy_form[name]" id="easy_form_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_model">Type</label><input value="Supplier Information" label="Type" disabled="disabled" data-model="supplier_information" type="text" name="easy_form[model]" id="easy_form_model" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_model_scope">Action</label><label class='text_label'><input label="Action" value="new" type="radio" checked="checked" name="easy_form[model_scope]" id="easy_form_model_scope_new" />New Supplier Request - Searchable (Internal)</label><label class='text_label'><input label="Action" value="edit" type="radio" name="easy_form[model_scope]" id="easy_form_model_scope_edit" />Supplier Update (External)</label><label class='text_label'><input label="Action" value="new_inline_only" type="radio" name="easy_form[model_scope]" id="easy_form_model_scope_new_inline_only" />New Supplier Request - Inline Only (Internal)</label><label class='text_label'><input label="Action" value="internal_update" type="radio" name="easy_form[model_scope]" id="easy_form_model_scope_internal_update" />Supplier Update - Searchable (Internal)</label></div>
+<div class='wrapper_vertical content_group_fields'>
+<label>Available to</label>
+
+<div>
+      <input type="radio" name="easy_form[business_group_ids][]" id="easy_form_business_groups_global" value="1" onClick="$(&#39;#easy_form_business_groups_other&#39;).removeAttr(&#39;disabled&#39;);$(&#39;#easy_form_business_groups_sel&#39;).prop(&#39;disabled&#39;,&#39;disabled&#39;);" checked="checked" /><img class="icon icon_button sprite-group" alt="" title="" src="/assets/blank-47043e4823a6c21a8881de789b4185355330b5804629d23f6b43dd93f5265292.gif" />&nbsp;Everyone<br/>
+
+
+      <input type="radio" name="easy_form[business_group_ids][]" id="easy_form_business_groups_other" value="" onClick="$(&#39;#easy_form_business_groups_sel&#39;).removeAttr(&#39;disabled&#39;);" />&nbsp;Only members of these content groups<br/>
+
+      <div style="margin-left:20px" id="content_group_selector">
+        <select name="easy_form[business_group_ids][]" id="easy_form_business_groups_sel" multiple="multiple" style="width:200px" class="chzn-select" onSelect="$(&#39;#easy_form_business_groups_other&#39;).click();"></select>
+
+      </div>
+
+      <script type="text/javascript">
+        $(function(){
+          $('#easy_form_business_groups_sel').chosen({
+            no_results_text: I18n.translate('defaults.select_no_results'),
+            placeholder_text_single: I18n.translate('defaults.select_placeholder_single'),
+            placeholder_text_multiple: I18n.translate('defaults.select_placeholder_multiple'),
+            source: "/business_groups/auto_complete?value_attr=id"
+          });
+          $('#easy_form_business_groups_sel').chosen().change(
+              function(){$('#easy_form_business_groups_other').attr('checked','checked').click();}
+          );
+          $('#easy_form_business_groups_other').closest('form').submit(
+              function(){$('#easy_form_business_groups_other').prop('disabled','disabled');}
+          );
+        });
+      </script>
+</div>
+
+</div>
+<div class='wrapper_vertical'>
+<label>Status</label>
+Inactive
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_description">Description</label><textarea rows="3" cols="80" label="Description" name="easy_form[description]" id="easy_form_description">
+</textarea></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_image">Thumbnail</label><span class="file-field-wrapper"><span class="show" style="display:none;"><span class="link"><a href=""></a></span><span class="hint">&nbsp;(<span class="change"><a id="image_change" href="javascript:void(0);" onclick="var f=$(this).parents(&#39;.file-field-wrapper&#39;); f.find(&#39;.show&#39;).hide(); f.find(&#39;.edit&#39;).show();; return false;">Change</a></span><span class="clear-wrapper">, <input id="hidden_easy_form_image_clear" disabled="disabled" class="clear" type="hidden" name="easy_form[image]" /><a id="image_clear" href="javascript:void(0);" onclick="var f = $(this).parents(&#39;.file-field-wrapper&#39;); f.find(&#39;.clear&#39;).prop(&#39;disabled&#39;,false); f.find(&#39;:input&#39;).val(null); f.find(&#39;.show&#39;).hide(); f.find(&#39;.edit&#39;).show();; return false;">Clear</a></span>)</span></span><span class="edit"><input type="file" name="easy_form[image]" id="easy_form_image" allow_clear="true" label="Thumbnail" /></span></span></div>
+<input type="hidden" name="easy_form[banner_crop_x]" id="easy_form_banner_crop_x" />
+<input type="hidden" name="easy_form[banner_crop_y]" id="easy_form_banner_crop_y" />
+<input type="hidden" name="easy_form[banner_crop_w]" id="easy_form_banner_crop_w" />
+<input type="hidden" name="easy_form[banner_crop_h]" id="easy_form_banner_crop_h" />
+<div class='easy_form_banner'></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_banner">Banner</label><span class="file-field-wrapper"><span class="show" style="display:none;"><span class="link"><a href=""></a></span><span class="hint">&nbsp;(<span class="change"><a id="banner_change" href="javascript:void(0);" onclick="var f=$(this).parents(&#39;.file-field-wrapper&#39;); f.find(&#39;.show&#39;).hide(); f.find(&#39;.edit&#39;).show();; return false;">Change</a></span><span class="clear-wrapper">, <input id="hidden_easy_form_banner_clear" disabled="disabled" class="clear" type="hidden" name="easy_form[banner]" /><a id="banner_clear" href="javascript:void(0);" onclick="var f = $(this).parents(&#39;.file-field-wrapper&#39;); f.find(&#39;.clear&#39;).prop(&#39;disabled&#39;,false); f.find(&#39;:input&#39;).val(null); f.find(&#39;.show&#39;).hide(); f.find(&#39;.edit&#39;).show();; return false;">Clear</a></span>)</span></span><span class="edit"><input type="file" name="easy_form[banner]" id="easy_form_banner" allow_clear="true" label="Banner" /></span></span></div>
+<div id='cropper_dialog' title='Crop'>
+<div class='content'>
+<div id='cropper'>
+<img id='easy_form_banner_img'>
+</div>
+<br class='clear'>
+<div class='page_buttons'>
+<div class='page_button'><a class="blue s_save_photo rollover button" id="save_easy_form_banner" title="Save" href="javascript:void(0);" onclick="window.easy_form_banner.save(); return false;"><span>Save</span></a></div>
+<div class='page_button cancel'><a title="Cancel" href="javascript:void(0);" onclick="window.easy_form_banner.close_modal(); return false;">Cancel</a></div>
+</div>
+</div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_form_reminder">Automated reminders and expiration</label><input name="easy_form[form_reminder]" type="hidden" value="0" /><input label="Automated reminders and expiration" type="checkbox" value="1" name="easy_form[form_reminder]" id="easy_form_form_reminder" /><img class="wordWrap icon_button sprite-info" title="This will send automated reminders to suppliers and then cancel the request if there is no response after 15 days. This can only be used with Supplier Update (External) forms." alt="This will send automated reminders to suppliers and then cancel the request if there is no response after 15 days. This can only be used with Supplier Update (External) forms." src="/assets/blank-47043e4823a6c21a8881de789b4185355330b5804629d23f6b43dd93f5265292.gif" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_auto_approve">Auto Approve</label><input name="easy_form[auto_approve]" type="hidden" value="0" /><input label="Auto Approve" type="checkbox" value="1" name="easy_form[auto_approve]" id="easy_form_auto_approve" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_auto_apply">Auto Apply</label><input name="easy_form[auto_apply]" type="hidden" value="0" /><input label="Auto Apply" type="checkbox" value="1" checked="checked" name="easy_form[auto_apply]" id="easy_form_auto_apply" /></div>
+<div class="form_element tags_wrapper wrapper_vertical"><label class="group_label" for="New_Supplier_Request_Form_Tags">Tags</label><script src="/assets/tag_widget-079765d25dcb630a5bdf69d838fe3803d559dd48417c04894710e49bd8ee63a1.js"></script>
+<div class='tag_list' id='TagWidgetEasyForm39'>
+<span class='taggings'>
+
+</span>
+<a class="add add_tag s-addTagLink" role="button" href="javascript:void(0);" onclick="TagWidgetEasyForm39 = TagWidget($(this)); return false;"><span>Add Tag</span></a>
+<div class='tag_add hide'>
+<div style='float:left;padding:5px'>
+<input type="text" name="tag" id="tag" data-autocomplete-url="/tag/auto_complete?taggable_id=39" data-autocomplete="tag_name" data-autocomplete-renderer="tags_autocomplete_renderer" class="tag" autocomplete="off" size="20" aria-label="Name" placeholder="Name" />
+<textarea name="description" id="description" placeholder="Note" class="description" aria-label="Note">
+</textarea>
+</div>
+<label style='float:left;padding:5px'>
+<input type="checkbox" name="is_private" id="is_private" value="1" class="is_private" style="border:none;" />
+Visible only to me
+</label>
+<input type="hidden" name="removable" id="removable" value="true" />
+<input type="hidden" name="delimiter" id="delimiter" />
+<div class='padding5'>
+<div class='clear'></div>
+<div class='left'>
+<a class="cancel_tag rollover button" href="javascript:void(0);" onclick="; return false;"><span>Cancel</span></a>
+</div>
+<div class='left'>
+<button type="button" class="button remote-field blue add_tag" data-with-fields-in="#TagWidgetEasyForm39 .tag_add" data-method="POST" data-url="/tag/39/add_tag?sourcing=false&amp;type=EasyForm" data-update="TagWidgetEasyForm39 .taggings" onclick="TagWidgetEasyForm39.close_tag_inputs();" data-disable-on-click="true"><span>Add</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<br class='clear'>
+<div class='easy_form_questionnaire expandable-section s-expandable-section' data-initial-expand='true'>
+<div class='header page_step_header'>
+<h2>
+<em>2</em>
+Questionnaire
+<div class='expandable-arrow'></div>
+</h2>
+</div>
+<div class='form_builder_container expandable-content'>
+<div class='collapse_all_expand_all'>
+<button class='buttonAsLink js_collapse_all_widgets collapse_all_widgets' type='button'>Collapse All</button><span class='pipe'></span><button class='buttonAsLink js_expand_all_widgets expand_all_widgets' type='button'>Expand All</button>
+</div>
+
+<div class='clear'></div>
+<div class='widgets' id='widget_list'>
+<div class='expandable-section header_widget s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='517' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<h2 class='preview_header'>New Supplier Request Form</h2>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Header field settings</h3>
+<input value="HeaderEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="1" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class='form_element'>
+<input class="ef_header" hide_label="true" size="30" type="text" value="New Supplier Request Form" name="easy_form[easy_form_widgets_attributes][0][value]" id="easy_form_easy_form_widgets_attributes_0_value" />
+</div>
+
+<div class='wrapper_horizontal'>
+<div class='radio layout-radio'>
+<label class='left'>Display the fields below this Header in the following format</label>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="517" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='expandable-section s-expandable-section section_break_widget widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='518' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<hr>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Section Break field settings</h3>
+<input value="SectionBreakEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="2" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class='wrapper_horizontal'>
+<div class='radio layout-radio'>
+<label class='left'>Display the fields below this Section Break in the following format</label>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="518" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='expandable-section header_widget s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='519' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<h2 class='preview_header'>CTC Primary Contact Information</h2>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Header field settings</h3>
+<input value="HeaderEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="3" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class='form_element'>
+<input class="ef_header" hide_label="true" size="30" type="text" value="CTC Primary Contact Information" name="easy_form[easy_form_widgets_attributes][0][value]" id="easy_form_easy_form_widgets_attributes_0_value" />
+</div>
+
+<div class='wrapper_horizontal'>
+<div class='radio layout-radio'>
+<label class='left'>Display the fields below this Header in the following format</label>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="519" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='descriptive_text_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='520' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='preview_descriptive_text'>Canadian Tire Contact Information</div>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Descriptive Text field settings</h3>
+<input value="DescriptiveTextEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="4" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class='react_easy_form_widget_conditions'></div>
+<textarea class="ef_descriptive_text wide_text_area" hide_label="true" name="easy_form[easy_form_widgets_attributes][0][value]" id="easy_form_easy_form_widgets_attributes_0_value">
+Canadian Tire Contact Information</textarea>
+
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="520" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='521' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Contact: Name</label>
+<input maxlength="255" size="30" widget="#&lt;BackedEasyFormWidget:0x000000001f8f3328&gt;" backing_model_obj="" label="CTC Employee Name" type="text" name="custom_field_4_preview[custom_field_4]" id="custom_field_4_preview_custom_field_4" />
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>CTC Employee Name field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="5" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Contact: Name" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_4" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" checked="checked" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_4" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="521" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='522' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Contact: Title</label>
+<input maxlength="255" size="30" widget="#&lt;BackedEasyFormWidget:0x000000001fd08d28&gt;" backing_model_obj="" label="Contact: Title" type="text" name="custom_field_5_preview[custom_field_5]" id="custom_field_5_preview_custom_field_5" />
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Contact: Title field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="6" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Contact: Title" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_5" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" checked="checked" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_5" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="522" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='523' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Contact: Email</label>
+<input maxlength="255" size="30" widget="#&lt;BackedEasyFormWidget:0x000000001fe41988&gt;" backing_model_obj="" label="Contact: Email" type="text" name="custom_field_6_preview[custom_field_6]" id="custom_field_6_preview_custom_field_6" />
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Contact: Email field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="7" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Contact: Email" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_6" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" checked="checked" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_6" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="523" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='524' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Contact: Phone (Work)</label>
+<input maxlength="255" size="30" widget="#&lt;BackedEasyFormWidget:0x0000000020038610&gt;" backing_model_obj="" label="Contact: Phone (Work)" type="text" name="custom_field_7_preview[custom_field_7]" id="custom_field_7_preview_custom_field_7" />
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Contact: Phone (Work) field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="8" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Contact: Phone (Work)" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_7" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" checked="checked" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_7" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="524" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='547' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Business Unit</label>
+<select label="Business Unit" class="custom_field_select" name="custom_field_11_preview[custom_field_11]" id="custom_field_11_preview_custom_field_11"><option value=""></option>
+<option value="CTC (incl. CTR, PS, Petro)">CTC (incl. CTR, PS, Petro)</option>
+<option value="FGL">FGL</option>
+<option value="MWW">MWW</option>
+<option value="CTFS">CTFS</option>
+<option value="CTREL">CTREL</option></select>
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Business Unit field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="9" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Business Unit" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_11" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" checked="checked" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_11" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="547" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='expandable-section s-expandable-section section_break_widget widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='525' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<hr>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Section Break field settings</h3>
+<input value="SectionBreakEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="10" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class='wrapper_horizontal'>
+<div class='radio layout-radio'>
+<label class='left'>Display the fields below this Section Break in the following format</label>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="525" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='expandable-section header_widget s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='526' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<h2 class='preview_header'>Business Needs</h2>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Header field settings</h3>
+<input value="HeaderEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="11" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class='form_element'>
+<input class="ef_header" hide_label="true" size="30" type="text" value="Business Needs" name="easy_form[easy_form_widgets_attributes][0][value]" id="easy_form_easy_form_widgets_attributes_0_value" />
+</div>
+
+<div class='wrapper_horizontal'>
+<div class='radio layout-radio'>
+<label class='left'>Display the fields below this Header in the following format</label>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="526" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='expandable-section s-expandable-section text_field_widget widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='527' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Business Needs</label>
+<input type="text" name="preview" id="preview" cols="30" rows="10" />
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Text Field field settings</h3>
+<input value="TextFieldEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="12" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Business Needs" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" maxlength="255" size="30" label="Reporting Name" type="text" value="business_needs" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" checked="checked" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" type="hidden" value="0" /><input type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="527" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='528' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Expected Annual Spend</label>
+
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Expected Annual Spend field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="13" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Expected Annual Spend" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_15" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" checked="checked" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_15" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="528" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='529' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Category Level 1</label>
+
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Category Level 1 field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="14" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Category Level 1" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_8" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" checked="checked" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_8" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="529" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='530' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Category Level 2</label>
+
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Category Level 2 field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="15" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Category Level 2" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_9" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_9" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="530" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='531' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Category Level 3</label>
+
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Category Level 3 field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="16" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Category Level 3" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_10" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_10" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="531" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='expandable-section s-expandable-section section_break_widget widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='532' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<hr>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Section Break field settings</h3>
+<input value="SectionBreakEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="17" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class='wrapper_horizontal'>
+<div class='radio layout-radio'>
+<label class='left'>Display the fields below this Section Break in the following format</label>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="532" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='expandable-section header_widget s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='533' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<h2 class='preview_header'>Supplier Information</h2>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Header field settings</h3>
+<input value="HeaderEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="18" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class='form_element'>
+<input class="ef_header" hide_label="true" size="30" type="text" value="Supplier Information" name="easy_form[easy_form_widgets_attributes][0][value]" id="easy_form_easy_form_widgets_attributes_0_value" />
+</div>
+
+<div class='wrapper_horizontal'>
+<div class='radio layout-radio'>
+<label class='left'>Display the fields below this Header in the following format</label>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="533" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='534' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Legal Supplier Name</label>
+<input widget="#&lt;BackedEasyFormWidget:0x00000000209299e0&gt;" type="text" name="name_preview[name]" id="name_preview_name" />
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Name field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="19" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Legal Supplier Name" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="name" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" checked="checked" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="name" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="534" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='535' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Supplier Operating Name</label>
+<input widget="#&lt;BackedEasyFormWidget:0x0000000020a696c0&gt;" type="text" name="display_name_preview[display_name]" id="display_name_preview_display_name" />
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Display Name field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="20" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Supplier Operating Name" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="display_name" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="display_name" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="535" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='expandable-section header_widget s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='536' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<h2 class='preview_header'>Supplier Contact Information</h2>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Header field settings</h3>
+<input value="HeaderEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="21" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class='form_element'>
+<input class="ef_header" hide_label="true" size="30" type="text" value="Supplier Contact Information" name="easy_form[easy_form_widgets_attributes][0][value]" id="easy_form_easy_form_widgets_attributes_0_value" />
+</div>
+
+<div class='wrapper_horizontal'>
+<div class='radio layout-radio'>
+<label class='left'>Display the fields below this Header in the following format</label>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="536" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='child_new_and_edit child_widget expandable-section s-expandable-section widget' data-child-easy-form-name='Supplier Primary Contact - Final' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='537' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>First Name</label>
+<input widget="#&lt;BackedEasyFormWidget:0x000000002ad8d568&gt;" type="text" name="name_given_preview[name_given]" id="name_given_preview_name_given" />
+<div class='hint'></div>
+</div>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Last Name</label>
+<input widget="#&lt;BackedEasyFormWidget:0x000000002adb4488&gt;" type="text" name="name_family_preview[name_family]" id="name_family_preview_name_family" />
+<div class='hint'></div>
+</div>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Email address</label>
+<input widget="#&lt;BackedEasyFormWidget:0x0000000029e52aa8&gt;" type="text" name="email_preview[email]" id="email_preview_email" />
+<div class='hint'></div>
+</div>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Mobile Phone</label>
+<div class='phone-field' id='phone_mobile_preview_phone_mobile_phone_field'>
+  <select name="" id="phone_mobile_preview_phone_mobile_toggle"><option selected="selected" value="domestic">US/Canada</option>
+<option value="intl">Other</option></select>
+  <span id="phone_mobile_preview_phone_mobile_domestic" class="domestic ">
+    <input type="text" name="phone_mobile_preview[phone_mobile]" id="phone_mobile_preview_phone_mobile" size="18" object_class_name="User" attribute_name="phone_mobile" />
+    <div class="hint" style="margin-left:10em;">650-555-1212</div>
+</span>
+  <div id="phone_mobile_preview_phone_mobile_intl" class="intl ">
+  <table>
+    <tr>
+        <td><input type="text" name="phone_mobile_preview[phone_mobile][country_code]" id="phone_mobile_preview_phone_mobile_country_code" size="4" disabled="disabled" object_class_name="User" attribute_name="phone_mobile" /></td>
+        <td><input type="text" name="phone_mobile_preview[phone_mobile][area_code]" id="phone_mobile_preview_phone_mobile_area_code" size="5" disabled="disabled" object_class_name="User" attribute_name="phone_mobile" /></td>
+        <td><input type="text" name="phone_mobile_preview[phone_mobile][number]" id="phone_mobile_preview_phone_mobile_number" size="9" disabled="disabled" object_class_name="User" attribute_name="phone_mobile" /></td>
+        <td><input type="text" name="phone_mobile_preview[phone_mobile][extension]" id="phone_mobile_preview_phone_mobile_extension" size="7" disabled="disabled" object_class_name="User" attribute_name="phone_mobile" /></td>
+    </tr><tr>
+      <td><span class="hint">Country</span></td>
+      <td><span class="hint">Area/City</span></td>
+      <td><span class="hint">Local</span></td>
+      <td><span class="hint">Extension (optional)</span></td>
+    </tr>
+  </table>
+</div></div>
+<script type="text/javascript">
+$(function() {
+  window.setTimeout(function () {
+    update_phone_field($("#phone_mobile_preview_phone_mobile_phone_field"));
+  }, 100);
+});
+</script>
+
+<div class='hint'></div>
+</div>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Work Phone</label>
+<div class='phone-field' id='phone_work_preview_phone_work_phone_field'>
+  <select name="" id="phone_work_preview_phone_work_toggle"><option selected="selected" value="domestic">US/Canada</option>
+<option value="intl">Other</option></select>
+  <span id="phone_work_preview_phone_work_domestic" class="domestic ">
+    <input type="text" name="phone_work_preview[phone_work]" id="phone_work_preview_phone_work" size="18" object_class_name="User" attribute_name="phone_work" />
+    <div class="hint" style="margin-left:10em;">650-555-1212</div>
+</span>
+  <div id="phone_work_preview_phone_work_intl" class="intl ">
+  <table>
+    <tr>
+        <td><input type="text" name="phone_work_preview[phone_work][country_code]" id="phone_work_preview_phone_work_country_code" size="4" disabled="disabled" object_class_name="User" attribute_name="phone_work" /></td>
+        <td><input type="text" name="phone_work_preview[phone_work][area_code]" id="phone_work_preview_phone_work_area_code" size="5" disabled="disabled" object_class_name="User" attribute_name="phone_work" /></td>
+        <td><input type="text" name="phone_work_preview[phone_work][number]" id="phone_work_preview_phone_work_number" size="9" disabled="disabled" object_class_name="User" attribute_name="phone_work" /></td>
+        <td><input type="text" name="phone_work_preview[phone_work][extension]" id="phone_work_preview_phone_work_extension" size="7" disabled="disabled" object_class_name="User" attribute_name="phone_work" /></td>
+    </tr><tr>
+      <td><span class="hint">Country</span></td>
+      <td><span class="hint">Area/City</span></td>
+      <td><span class="hint">Local</span></td>
+      <td><span class="hint">Extension (optional)</span></td>
+    </tr>
+  </table>
+</div></div>
+<script type="text/javascript">
+$(function() {
+  window.setTimeout(function () {
+    update_phone_field($("#phone_work_preview_phone_work_phone_field"));
+  }, 100);
+});
+</script>
+
+<div class='hint'></div>
+</div>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Fax</label>
+<div class='phone-field' id='phone_fax_preview_phone_fax_phone_field'>
+  <select name="" id="phone_fax_preview_phone_fax_toggle"><option selected="selected" value="domestic">US/Canada</option>
+<option value="intl">Other</option></select>
+  <span id="phone_fax_preview_phone_fax_domestic" class="domestic ">
+    <input type="text" name="phone_fax_preview[phone_fax]" id="phone_fax_preview_phone_fax" value="false" size="18" object_class_name="User" attribute_name="phone_fax" />
+    <div class="hint" style="margin-left:10em;">650-555-1212</div>
+</span>
+  <div id="phone_fax_preview_phone_fax_intl" class="intl ">
+  <table>
+    <tr>
+        <td><input type="text" name="phone_fax_preview[phone_fax][country_code]" id="phone_fax_preview_phone_fax_country_code" value="false" size="4" disabled="disabled" object_class_name="User" attribute_name="phone_fax" /></td>
+        <td><input type="text" name="phone_fax_preview[phone_fax][area_code]" id="phone_fax_preview_phone_fax_area_code" value="false" size="5" disabled="disabled" object_class_name="User" attribute_name="phone_fax" /></td>
+        <td><input type="text" name="phone_fax_preview[phone_fax][number]" id="phone_fax_preview_phone_fax_number" value="false" size="9" disabled="disabled" object_class_name="User" attribute_name="phone_fax" /></td>
+        <td><input type="text" name="phone_fax_preview[phone_fax][extension]" id="phone_fax_preview_phone_fax_extension" value="false" size="7" disabled="disabled" object_class_name="User" attribute_name="phone_fax" /></td>
+    </tr><tr>
+      <td><span class="hint">Country</span></td>
+      <td><span class="hint">Area/City</span></td>
+      <td><span class="hint">Local</span></td>
+      <td><span class="hint">Extension (optional)</span></td>
+    </tr>
+  </table>
+</div></div>
+<script type="text/javascript">
+$(function() {
+  window.setTimeout(function () {
+    update_phone_field($("#phone_fax_preview_phone_fax_phone_field"));
+  }, 100);
+});
+</script>
+
+<div class='hint'></div>
+</div>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Supplier Primary Contact - Final field settings</h3>
+<input value="ChildEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="22" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input value="26" type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+<input value="26" class="ef_child_form_id" type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="537" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='538' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Supplier Title</label>
+<input maxlength="255" size="30" widget="#&lt;BackedEasyFormWidget:0x0000000020b1f150&gt;" backing_model_obj="" label="Supplier Title" type="text" name="custom_field_2_preview[custom_field_2]" id="custom_field_2_preview_custom_field_2" />
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Supplier Title field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="23" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Supplier Title" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_2" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_2" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="538" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='539' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Supplier Website</label>
+<input maxlength="255" size="30" widget="#&lt;BackedEasyFormWidget:0x0000000020cf97a0&gt;" backing_model_obj="" label="Supplier Website" type="text" name="custom_field_3_preview[custom_field_3]" id="custom_field_3_preview_custom_field_3" />
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Supplier Website field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="24" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Supplier Website" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_3" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_3" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="539" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='540' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Sourced through Non-Merch Procurement?</label>
+<select label="Sourced through Non-Merch Procurement?" class="custom_field_select" name="custom_field_1_preview[custom_field_1]" id="custom_field_1_preview_custom_field_1"><option value=""></option>
+<option value="Yes">Yes</option>
+<option value="No">No</option></select>
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Sourced through Non-Merch Procurement? field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="25" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Sourced through Non-Merch Procurement?" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_1" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_1" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="540" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='541' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Was D&amp;B Supplier Risk consulted?</label>
+<select label="was D&amp;B Supplier Risk consulted?" class="custom_field_select" name="custom_field_12_preview[custom_field_12]" id="custom_field_12_preview_custom_field_12"><option value=""></option>
+<option value="Yes">Yes</option>
+<option value="No">No</option></select>
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>was D&amp;B Supplier Risk consulted? field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="26" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Was D&amp;B Supplier Risk consulted?" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_12" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_12" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="541" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='542' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Is NDA signed by vendor and in Coupa?</label>
+<select label="Is NDA signed by vendor and in Coupa?" class="custom_field_select" name="custom_field_13_preview[custom_field_13]" id="custom_field_13_preview_custom_field_13"><option value=""></option>
+<option value="Yes">Yes</option>
+<option value="No">No</option></select>
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Is NDA signed by vendor and in Coupa? field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="27" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Is NDA signed by vendor and in Coupa?" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_13" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_13" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="542" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='543' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Supplier Code of Conduct signed/filed?</label>
+<select label="Supplier Code of Conduct signed/filed?" class="custom_field_select" name="custom_field_14_preview[custom_field_14]" id="custom_field_14_preview_custom_field_14"><option value=""></option>
+<option value="Yes">Yes</option>
+<option value="No">No</option></select>
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Supplier Code of Conduct signed/filed? field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="28" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Supplier Code of Conduct signed/filed?" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_14" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_14" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="543" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='expandable-section s-expandable-section text_field_widget widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='544' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Supplier Justification</label>
+<input type="text" name="preview" id="preview" cols="30" rows="10" />
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Text Field field settings</h3>
+<input value="TextFieldEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="29" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Supplier Justification" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" maxlength="255" size="30" label="Reporting Name" type="text" value="supplier_justification" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" checked="checked" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" type="hidden" value="0" /><input type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="544" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='expandable-section s-expandable-section text_area_widget widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='545' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Comments (if any)</label>
+<textarea name="preview" id="preview" cols="30" rows="10">
+</textarea>
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Text Area field settings</h3>
+<input value="TextAreaEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="30" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Comments (if any)" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" maxlength="255" size="30" label="Reporting Name" type="text" value="comments__if_any_" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" type="hidden" value="0" /><input type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="545" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+<div class='backed_widget expandable-section s-expandable-section widget' data-confirm-delete-message='Are you sure you want to delete this field?' data-initial-expand='false' data-widget-id='546' data-widget-required='false'>
+<div class='actions'>
+<div class='collapsed expandable-arrow'></div>
+</div>
+<div class='preview'>
+<div class='form_element wrapper_vertical'>
+<label class='preview_prompt'>Attachments</label>
+<span class="file-field-wrapper"><span class="show" style="display:none;"><span class="link"><a href=""></a></span><span class="hint">&nbsp;(<span class="change"><a id="custom_field_16_change" href="javascript:void(0);" onclick="var f=$(this).parents(&#39;.file-field-wrapper&#39;); f.find(&#39;.show&#39;).hide(); f.find(&#39;.edit&#39;).show();; return false;">Change</a></span><span class="clear-wrapper">, <input id="hidden_custom_field_16_preview_custom_field_16_clear" disabled="disabled" class="clear" type="hidden" name="custom_field_16_preview[custom_field_16]" /><a id="custom_field_16_clear" href="javascript:void(0);" onclick="var f = $(this).parents(&#39;.file-field-wrapper&#39;); f.find(&#39;.clear&#39;).prop(&#39;disabled&#39;,false); f.find(&#39;:input&#39;).val(null); f.find(&#39;.show&#39;).hide(); f.find(&#39;.edit&#39;).show();; return false;">Clear</a></span>)</span></span><span class="edit"><input type="file" name="custom_field_16_preview[custom_field_16]" id="custom_field_16_preview_custom_field_16" widget="#&lt;BackedEasyFormWidget:0x0000000021460548&gt;" backing_model_obj="" label="Attachments" /></span></span>
+
+<div class='preview_hint hint'></div>
+</div>
+</div>
+<div class='widget_fields expandable-content'>
+<h3 class='widget_title'>Attachments field settings</h3>
+<input value="BackedEasyFormWidget" type="hidden" name="easy_form[easy_form_widgets_attributes][0][type]" id="easy_form_easy_form_widgets_attributes_0_type" />
+<input class="position" type="hidden" value="31" name="easy_form[easy_form_widgets_attributes][0][position]" id="easy_form_easy_form_widgets_attributes_0_position" />
+<input class="_destroy" type="hidden" value="false" name="easy_form[easy_form_widgets_attributes][0][_destroy]" id="easy_form_easy_form_widgets_attributes_0__destroy" />
+<input type="hidden" name="easy_form[easy_form_widgets_attributes][0][child_easy_form_id]" id="easy_form_easy_form_widgets_attributes_0_child_easy_form_id" />
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_prompt">Label or Question</label><input value="Attachments" class="ef_prompt" label="Label or Question" size="30" max_length="255" type="text" name="easy_form[easy_form_widgets_attributes][0][prompt]" id="easy_form_easy_form_widgets_attributes_0_prompt" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_field_name">Reporting Name</label><input class="ef_fieldname" disabled="disabled" maxlength="255" size="30" label="Reporting Name" type="text" value="custom_field_16" name="easy_form[easy_form_widgets_attributes][0][field_name]" id="easy_form_easy_form_widgets_attributes_0_field_name" /></div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_hint">Hint or Additional Text</label><input class="ef_hint" label="Hint or Additional Text" size="30" type="text" value="" name="easy_form[easy_form_widgets_attributes][0][hint]" id="easy_form_easy_form_widgets_attributes_0_hint" /></div>
+<div class='required_attr'>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_required">Required</label><input name="easy_form[easy_form_widgets_attributes][0][required]" type="hidden" value="0" /><input label="Required" class="check_box_required" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][required]" id="easy_form_easy_form_widgets_attributes_0_required" /></div>
+</div>
+<div class="form_element wrapper_vertical"><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_encrypted">Encrypted</label><input name="easy_form[easy_form_widgets_attributes][0][encrypted]" disabled="disabled" type="hidden" value="0" /><input disabled="disabled" type="checkbox" value="1" name="easy_form[easy_form_widgets_attributes][0][encrypted]" id="easy_form_easy_form_widgets_attributes_0_encrypted" /></div>
+
+<input type="hidden" value="custom_field_16" name="easy_form[easy_form_widgets_attributes][0][backing_attribute]" id="easy_form_easy_form_widgets_attributes_0_backing_attribute" />
+<div class='react_easy_form_widget_conditions'></div>
+<div class='hidden wrapper_horizontal'>
+<div class='radio layout-radio'>
+<div class="form_element wrapper_inline"><input type="radio" value="true" checked="checked" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_true" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Vertical</label></div>
+<div class="form_element wrapper_inline"><input type="radio" value="false" name="easy_form[easy_form_widgets_attributes][0][vertical_format]" id="easy_form_easy_form_widgets_attributes_0_vertical_format_false" /><label class="group_label" for="easy_form_easy_form_widgets_attributes_0_vertical_format">Horizontal</label></div>
+</div>
+</div>
+
+<input type="hidden" value="546" name="easy_form[easy_form_widgets_attributes][0][id]" id="easy_form_easy_form_widgets_attributes_0_id" /><div class='clear'></div>
+</div>
+</div>
+
+</div>
+<div id='deleted_widgets' style='display: none;'></div>
+</div>
+</div>
+
+
+</form>
+<div class='page_buttons_left'>
+<div class='page_button'>
+
+</div>
+<div class='cancel page_button'>
+<a href="/easy_forms">Cancel</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class='push'></div>
+</div>
+<footer>
+<div class='logo-container'>
+<a target="_blank" role="link" tabindex="-1" href="https://www.coupa.com"><img class="asset_sprites assets-footerLogo" title="Coupa Software" alt="Coupa Software" src="/assets/blank-47043e4823a6c21a8881de789b4185355330b5804629d23f6b43dd93f5265292.gif" /></a>
+</div>
+<span>Business Spend Management</span>
+</footer>
+
+
+<script>
+//<![CDATA[
+
+//]]>
+</script>
+<script>
+  var COUPA_SETTINGS = COUPA_SETTINGS || {};
+  COUPA_SETTINGS.dual_uom = 0;
+</script>
+  <script src="https://ssl.google-analytics.com/ga.js"></script>
+
+<script type="text/javascript">
+      if (typeof(_gat) == "object") {
+          var pageTracker = _gat._getTracker("UA-4959704-5");
+          pageTracker._setDomainName('none');
+          pageTracker._setAllowLinker(true);
+          pageTracker._initData();
+          pageTracker._trackPageview();
+      }
+
+    window.pendo_options = {
+        apiKey: 'ffb1c127-41aa-46a9-4bd4-a6396f38237f',
+        usePendoAgentAPI: false,
+
+        visitor: {
+            id: 'cantire-test.coupahost.com-45',
+            locale: 'en'
+        },
+
+        account: {
+            id: 'cantire-test.coupahost.com',
+                code_branch: 'stable_024.4.1',
+                code_revision: 'c0ff8acc2343dcf788c4d979ddedf15db737e58d',
+                code_deployment: 'stg720',
+        }
+    };
+    (function () {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = ('https:' === document.location.protocol ? 'https://' : 'http://' ) + 'd3accju1t3mngt.cloudfront.net/js/pa.min.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+    })();
+ </script>
+
+</body>
+</html>
